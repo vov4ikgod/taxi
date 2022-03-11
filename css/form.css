@@ -1,0 +1,269 @@
+* {
+    font-family: 'inter';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --p: 14px;
+    --p2: 16px;
+    --h1: 75px;
+    --main-color: #FFC40B;
+    --grey: #D2D2D2;
+    --light-grey: #FAFAFA;
+}
+
+
+
+/* global form styles */
+
+form {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-wrapper {
+    width: 1170px;
+    height: 100%;
+    padding: 50px 100px 50px 100px;
+    background-color: #fff;
+    border: 2px solid #D2D2D2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.title-form {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.steps-numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon-step-number {
+    width: 30px;
+    height: 30px;
+    background-color: var(--grey);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.step-number.active-step-number > .icon-step-number {
+    background-color: var(--main-color);
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.hr-form {
+    width: 970px;
+    height: 2px;
+    background-color: var(--light-grey);
+    margin-top: 30px;
+}
+
+.buttons-next-prev {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 36px;
+}
+
+.next {
+    width: 200px;
+    height: 50px;
+    background-color: var(--main-color);
+    font-size: 14px;
+    border: 0;
+    transition: all .2s ease;
+}
+
+.next:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.prev {
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 14px;
+    border: 2px solid var(--main-color);
+    transition: all .2s ease;
+}
+
+.prev:hover {
+    background-color: var(--main-color);
+}
+
+.text-right-buttons-form {
+    font-size: 12px;
+    line-height: 15px;
+    color: #151515;
+}
+
+.title-right-buttons-form {  
+    font-size: 14px;
+}
+/* ------------------------------------ */
+
+
+
+/* step 1 */
+
+.selects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.select-block {
+    max-width: 270px;
+    width: 270px;
+}
+
+.choices__inner {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0px;
+    border: 0;
+    border-radius: 0;
+    width: 270px;
+    min-height: auto;
+    border-bottom: 2px solid var(--grey);
+    color:#828282;
+}
+
+/* -------------------------------- */ 
+
+
+
+
+
+/* step 2 */
+
+.inputs-form-step2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 55px;
+    width: 100%;
+}   
+
+.input-form-step2 {
+    border: 0;
+    color: #828282;
+    padding: 15px 0;
+    border-bottom: 2px solid #D2D2D2;
+    outline: none;
+    width: 270px;
+}
+
+/* ------ */
+
+
+
+/* step 3 */
+
+.inputs-form-step3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}   
+
+.input-form-step3 {
+    border: 0;
+    color: #828282;
+    padding: 15px 0;
+    border-bottom: 2px solid #D2D2D2;
+    outline: none;
+    width: 270px;
+}
+
+.block-1-form-step3 {
+    display: flex;
+    gap: 30px;
+}   
+
+.block-2-form-step3 {
+    display: flex;
+    gap: 30px;
+}
+
+.checkbox-reverse-tranfer-block {
+    display: flex;
+    gap: 20px;
+}
+
+.checkbox-reverse-tranfer {
+    display: none;
+}
+
+.checkbox-reverse-tranfer:checked ~ .fake-checkbox-form-step3:before {
+    opacity: 1;
+}
+
+.fake-checkbox-form-step3 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #151515;
+    background-color: #fff;
+    position: relative;
+    transition: all .2s ease;
+}
+
+.fake-checkbox-form-step3:before {
+    position: absolute;
+    content: '';
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #151515;
+    opacity: 0;
+    
+}
+
+
+
+/* ------ */
