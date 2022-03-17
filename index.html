@@ -60,7 +60,6 @@
         </div>
     </header>
 
-
     <section class="welcome-screen">
         <div class="wrapper-welcome-screen">
             <h1 class="title-welcome-screen">Такси аеропорта <span class="title-span-welcome-screen">Симферополь</span></h1>
@@ -73,7 +72,7 @@
                     <h3 class="title-form title">Заказать такси</h3>
 
                     <div class="steps-numbers">
-                        <div class="step-number">
+                        <div class="step-number active-step-number">
                             <div class="icon-step-number text">1</div>
                             <div class="text-step-number text">Место назначения</div>
                             <div class="p-step-number p">Шаг 1</div>
@@ -106,12 +105,11 @@
                                     <div class="select">
                                         <select class="p default">
                                             <option value="" style="display:none">Выберите класс такси</option>
-                                            <option value="1" class="p text-select">Эконом</option>
-                                            <option value="2" class="p text-select">Комфорт</option>
-                                            <option value="3" class="p text-select">Бизнес</option>
-                                            <option value="4" class="p text-select">VIP</option>
+                                            <option value="1" class="p text-select">Стандарт</option>
+                                            <option value="2" class="p text-select">Универсал</option>
+                                            <option value="3" class="p text-select">Комфорт</option>
+                                            <option value="4" class="p text-select">Бизнес</option>
                                             <option value="5" class="p text-select">Минивен</option>
-                                            <option value="6" class="p text-select">Микроавтобус</option>
                                         </select>
                                     </div>
                                 </div>
@@ -205,7 +203,7 @@
 
                                 <div class="block-input-step2">
                                     <div class="input-title-step32 title">Комментарий к заказу</div>
-                                    <input type="time" class="input-form-step3 p" placeholder="Ваши комментарии и пожелания ">
+                                    <input type="text" class="input-form-step3 p" placeholder="Ваши комментарии и пожелания ">
                                 </div>
                             </div>
                         </div>
@@ -224,13 +222,335 @@
                 </div>
             </div>
         </form>
+
     </section>
 
-    
+    <section class="why-us">
+        <div class="wrapper-why-us">
+            <div class="left-content-why-us">
+                <div class="left-title-why-us">Почему<br>выбирают нас?</div> 
+                <div class="left-text-why-us">Преимущества нашего такси</div>
+                <div class="left-img-why-us"><img src="./img/why-us.png"></div>                                                                                                                                  
+            </div>      
 
+            <div class="right-content-why-us">
+                <div class="item-whe-us">
+                    <div class="icon-whe-us"><img src="./img/icon/shield.svg" alt="shield"></div>
+                    <div class="title-whe-us title">Безопасность</div>
+                    <div class="text-block-whe-us">
+                        <div class="text-whe-us">Автомобили проходят регулярный техосмотр<br>и дезинфицируются после каждой поездки.</div>
+                        <div class="text-whe-us">Также мы сторого соблюдаем правила перевозки<br>маленьких поссажиров и абсолютно бесплатно<br>предоставим детское атокресло или бустер</div>
+                    </div>
+                </div>
+
+                <div class="item-whe-us">
+                    <div class="icon-whe-us"><img src="./img/icon/driver.svg" alt="driver"></div>
+                    <div class="title-whe-us title">Без «бомбил»</div>
+                    <div class="text-block-whe-us">
+                        <div class="text-whe-us">Только официальное трудоустройство — все<br>наши водители с лицензией в такси и со стажем<br>вождения по Крыму от 8 лет.</div>
+                        <div class="text-whe-us">*Поездка проходит с соблюдением масочного<br>режима</div>
+                    </div>
+                </div>
+
+                <div class="item-whe-us">
+                    <div class="icon-whe-us"><img src="./img/icon/discount.svg" alt="discount"></div>
+                    <div class="title-whe-us title">Скидка до 50%</div>
+                    <div class="text-block-whe-us">
+                        <div class="text-whe-us">Предоставим скидку на обратный трансфер<br>до 50% от средней цены поездки. Просто заранее<br>предупредите оператора, что вам понадобится<br>машина обратно</div>
+                    </div>
+                </div>
+
+                <div class="item-whe-us">
+                    <div class="icon-whe-us"><img src="./img/icon/counterclockwise.svg" alt="counterclockwise"></div>
+                    <div class="title-whe-us title">Круглосуточный заказ такси</div>
+                    <div class="text-block-whe-us">
+                        <div class="text-whe-us">Работаем 24/7 — оперативно подадим<br>автомобиль в любое время суток. Ночные<br>тарифы дополнительно не тарифициеруются<br>и также доступны и недороги как дневные</div>
+                    </div>
+                </div>
+            </div>                                                               
+        </div>
+    </section>
+
+    <div class="rates">
+        <div class="wrappper-rates">
+            <div class="rates-title">Тарифы по направлениям</div>
+            <div class="rates-description">Стоимость такси из Симферополя по Крыму</div>
+
+            <table class="table">
+                <tr class="table-header">
+                    <th class="item-table-header-left name-table-header">Направление</th>
+                    <th class="item-table-header">Стандарт</th>
+                    <th class="item-table-header">Универсал</th>
+                    <th class="item-table-header">Комфорт</th>
+                    <th class="item-table-header">Бизнес</th>
+                    <th class="item-table-header">Минивен</th>
+                </tr>
+
+                <tr>
+                    <td class="name-table">Симферополь — Азовское</td>
+                    <td class="rub-table">789 ₽</td>
+                    <td class="rub-table">1089 ₽</td>
+                    <td class="rub-table">1300 ₽</td>
+                    <td class="rub-table">1809 ₽</td>
+                    <td class="rub-table">2100 ₽</td>
+                </tr>
+
+                <tr>
+                    <td class="name-table">Симферополь — Алупка</td>
+                    <td class="rub-table">789 ₽</td>
+                    <td class="rub-table">1089 ₽</td>
+                    <td class="rub-table">1300 ₽</td>
+                    <td class="rub-table">1809 ₽</td>
+                    <td class="rub-table">2100 ₽</td>
+                </tr>
+
+                <tr>
+                    <td class="name-table">Симферополь — Алушта</td>
+                    <td class="rub-table">789 ₽</td>
+                    <td class="rub-table">1089 ₽</td>
+                    <td class="rub-table">1300 ₽</td>
+                    <td class="rub-table">1809 ₽</td>
+                    <td class="rub-table">2100 ₽</td>
+                </tr>
+
+                <tr>
+                    <td class="name-table">Симферополь — Армянск</td>
+                    <td class="rub-table">789 ₽</td>
+                    <td class="rub-table">1089 ₽</td>
+                    <td class="rub-table">1300 ₽</td>
+                    <td class="rub-table">1809 ₽</td>
+                    <td class="rub-table">2100 ₽</td>
+                </tr>
+
+                <tr>
+                    <td class="name-table">Симферополь — Артек</td>
+                    <td class="rub-table">789 ₽</td>
+                    <td class="rub-table">1089 ₽</td>
+                    <td class="rub-table">1300 ₽</td>
+                    <td class="rub-table">1809 ₽</td>
+                    <td class="rub-table">2100 ₽</td>
+                </tr>
+
+                <tr>
+                    <td class="name-table">Симферополь — Байдарские ворота</td>
+                    <td class="rub-table">789 ₽</td>
+                    <td class="rub-table">1089 ₽</td>
+                    <td class="rub-table">1300 ₽</td>
+                    <td class="rub-table">1809 ₽</td>
+                    <td class="rub-table">2100 ₽</td>
+                </tr>
+
+                <tr>
+                    <td class="name-table">Симферополь — Рабочий уголок</td>
+                    <td class="rub-table">789 ₽</td>
+                    <td class="rub-table">1089 ₽</td>
+                    <td class="rub-table">1300 ₽</td>
+                    <td class="rub-table">1809 ₽</td>
+                    <td class="rub-table">2100 ₽</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="offical-taxi">
+        <div class="wrapper-offical-taxi">
+            <div class="title-offical-taxi">Официальное такси аэропорта Симферополь</div>
+
+            <div class="text-block-offical-texi">
+                <div class="item-offical-taxi">
+                    <div class="block-text-offical-taxi">
+                        <div class="icon-text-offical-taxi">1</div>
+                        <div class="text-offical-taxi-offical-taxi">Значимость этих проблем настолько очевидна, что рамки и место обучения кадров способствует подготовки и реализации направлений прогрессивного развития.</div>
+                    </div>
+                    <br>
+                    <div class="block-text-offical-taxi">
+                        <div class="icon-text-offical-taxi">2</div>
+                        <div class="text-offical-taxi-offical-taxi">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют от нас анализа форм развития. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</div>
+                    </div>
+                    <br>
+                    <div class="block-text-offical-taxi">
+                        <div class="icon-text-offical-taxi">3</div>
+                        <div class="text-offical-taxi-offical-taxi">Товарищи! начало повседневной работы по формированию позиции способствует подготовки и реализации форм развития. Идейные соображения высшего порядка, а также консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения систем массового участия.</div>
+                    </div>
+                </div>
+
+                <div class="item-offical-taxi">
+                    <div class="block-text-offical-taxi">
+                        <div class="icon-text-offical-taxi" style="font-weight: 400;">-</div>
+                        <div class="text-offical-taxi-offical-taxi">Значимость этих проблем настолько очевидна, что рамки и место обучения кадров способствует подготовки и реализации направлений прогрессивного развития.</div>
+                    </div>
+                    <br>
+                    <div class="block-text-offical-taxi">
+                        <div class="icon-text-offical-taxi" style="font-weight: 400;">-</div>
+                        <div class="text-offical-taxi-offical-taxi">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности требуют от нас анализа форм развития. Идейные соображения высшего порядка, а также консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</div>
+                    </div>
+                    <br>
+                    <div class="block-text-offical-taxi">
+                        <div class="icon-text-offical-taxi" style="font-weight: 400;">-</div>
+                        <div class="text-offical-taxi-offical-taxi">Товарищи! начало повседневной работы по формированию позиции способствует подготовки и реализации форм развития. Идейные соображения высшего порядка, а также консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Товарищи! дальнейшее развитие различных форм деятельности требуют определения и уточнения систем массового участия.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="taxi-number">
+        <div class="wrapper-taxi-number">
+            <div class="title-taxi-number">Наше такси в цифрах</div>
+            <div class="description-taxi-number">Мы в цифрах</div>
+        </div>
+
+        <div class="items-taxi-number">
+            <div class="item-taxi-number">
+                <div class="item-title-taxi-number">3657</div>
+                <div class="item-text-taxi-number">Постоянных клиентов</div>
+            </div>
+
+            <div class="item-taxi-number">
+                <div class="item-title-taxi-number">6 лет</div>
+                <div class="item-text-taxi-number">Средний опыт водителей</div>
+            </div>
+
+            <div class="item-taxi-number">
+                <div class="item-title-taxi-number">175</div>
+                <div class="item-text-taxi-number">Авто в автопарке</div>
+            </div>
+
+            <div class="item-taxi-number">
+                <div class="item-title-taxi-number">10 лет</div>
+                <div class="item-text-taxi-number">Радуем вас качественным сервисом</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="class-taxi">
+        <div class="wrapper-class-taxi">
+            <div class="block-text-class-taxi">
+                <div class="title-class-taxi">Классы такси</div>
+                <div class="description-class-taxi">Подадим машину за 30 минут</div>
+            </div>
+
+            <div class="main-class-taxi">
+
+                <div class="slide-class-taxi">
+                    <div class="block-slide-class-taxi">
+                        <div class="text-block-slide-class-taxi">
+                            <div class="title-slide-class-taxi">Стандарт</div>
+                            <div class="discription-slide-class-taxi">VW Polo, Kia RIO</div>
+                        </div>
+
+                        <div class="block-img-slide-class-taxi">
+                            <img class="img-slide-class-taxi" src="./img/Комфорт-big.png" alt="car">
+                        </div>
+
+                        <button class="btn-slide-class-taxi">Забронировать</button>
+                    </div>
+
+                    <div class="block-slide-class-taxi">
+                        <div class="text-block-slide-class-taxi">
+                            <div class="title-slide-class-taxi">Универсал</div>
+                            <div class="discription-slide-class-taxi">Lacetti, Octavia, Cruze, Passat</div>
+                        </div>
+
+                        <div class="block-img-slide-class-taxi">
+                            <img class="img-slide-class-taxi" src="./img/Комфорт-big.png" alt="car">
+                        </div>
+
+                        <button class="btn-slide-class-taxi">Забронировать</button>
+                    </div>
+
+                    <div class="block-slide-class-taxi">
+                        <div class="text-block-slide-class-taxi">
+                            <div class="title-slide-class-taxi">Комфорт</div>
+                            <div class="discription-slide-class-taxi">Skoda Octvia, Chevrolet Cruze</div>
+                        </div>
+
+                        <div class="block-img-slide-class-taxi">
+                            <img class="img-slide-class-taxi" src="./img/Комфорт-big.png" alt="car">
+                        </div>
+
+                        <button class="btn-slide-class-taxi">Забронировать</button>
+                    </div>
+
+                    <div class="block-slide-class-taxi active-class-taxi">
+                        <div class="text-block-slide-class-taxi">
+                            <div class="title-slide-class-taxi">Бизнес</div>
+                            <div class="discription-slide-class-taxi">Toyota Camry, Skoda Superb</div>
+                        </div>
+
+                        <div class="block-img-slide-class-taxi">
+                            <img class="img-slide-class-taxi" src="./img/Комфорт-big.png" alt="car">
+                        </div>
+
+                        <button class="btn-slide-class-taxi">Забронировать</button>
+                    </div>
+
+                    <div class="block-slide-class-taxi">
+                        <div class="text-block-slide-class-taxi">
+                            <div class="title-slide-class-taxi">Минивен</div>
+                            <div class="discription-slide-class-taxi">Hyundai Starex, Mercedes Vito</div>
+                        </div>
+
+                        <div class="block-img-slide-class-taxi">
+                            <img class="img-slide-class-taxi" src="./img/Комфорт-big.png" alt="car">
+                        </div>
+
+                        <button class="btn-slide-class-taxi">Забронировать</button>
+                    </div>
+                </div>
+
+                <div class="switches-class-taxi">
+                    <div class="switche-class-taxi grey">
+                        <div class="title-switche-class-taxi">Стандарт</div>
+                        <div class="discription-switche-slide-class-taxi">VW Polo, Kia RIO</div>
+                        <div class="block-img-switche-class-taxi">
+                            <img class="img-switche-class-taxi" src="./img/Стандарт-mini.png" alt="car">
+                        </div>
+                    </div>
+
+                    <div class="switche-class-taxi">
+                        <div class="title-switche-class-taxi">Универсал</div>
+                        <div class="block-discription-switche-class-taxi">
+                            <div class="discription-switche-slide-class-taxi">Lacetti, Octavia, Cruze, Passat</div>
+                            <div class="discription-switche-slide-class-taxi" style="color: #828282;">*Вместительный багажник</div>
+                        </div>
+                        <div class="block-img-switche-class-taxi">
+                            <img class="img-switche-class-taxi" src="./img/Универсал-mini.png" alt="car">
+                        </div>
+                    </div>
+
+                    <div class="switche-class-taxi grey">
+                        <div class="title-switche-class-taxi">Комфорт</div>
+                        <div class="discription-switche-slide-class-taxi">Skoda Octvia, Chevrolet Cruze</div>
+                        <div class="block-img-switche-class-taxi">
+                            <img class="img-switche-class-taxi" src="./img/Комфорт-mini.png" alt="car">
+                        </div>
+                    </div>
+
+                    <div class="switche-class-taxi">
+                        <div class="title-switche-class-taxi">Бизнес</div>
+                        <div class="discription-switche-slide-class-taxi">Toyota Camry, Skoda Superb</div>
+                        <div class="block-img-switche-class-taxi">
+                            <img class="img-switche-class-taxi" src="./img/Бизнес-mini.png" alt="car">
+                        </div>
+                    </div>
+
+                    <div class="switche-class-taxi grey">
+                        <div class="title-switche-class-taxi">Минивен</div>
+                        <div class="discription-switche-slide-class-taxi">Hyundai Starex, Mercedes Vito</div>
+                        <div class="block-img-switche-class-taxi">
+                            <img class="img-switche-class-taxi" src="./img/Минивен-mini.png" style="width: auto; height: auto;" alt="car">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/form.js"></script>
     <script src="./js/choices.min.js"></script>
     <script src="./js/select.js"></script>
-    <script src="./js/form.js"></script>
+    <script src="./js/class-taxi.js"></script>
 
 </body>
 </html>
