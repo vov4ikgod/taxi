@@ -1,14 +1,23 @@
-const blockSlideClass = document.querySelectorAll('.block-slide-class-taxi'); 
-const switcheClass = document.querySelectorAll('.switche-class-taxi');
+const carListSwitches = document.querySelector('.switches-class-taxi');
 
-const switche = () => {
-    blockSlideClass.forEach(item => {
-        if (item.classList.contains('active-class-taxi')) {
-            item.classList.remove('active-class-taxi');
-        }   
+carListSwitches.addEventListener('click', (e) => {
+    const data = e.target.closest('[data-rate]');
+    if (data) {
+        const rateBlock = document.querySelector(".title-slide-class-taxi");
+        const modelsBlock = document.querySelector(".discription-slide-class-taxi");
+        const imgCar = document.querySelector('.img-slide-class-taxi');
+        
+        const { 
+            rate,
+            car,
+            img
+        } = data.dataset
 
-        item.classList.add('active-class-taxi');
-    })
-}
+        rateBlock.innerText = rate;
+        modelsBlock.innerText = car;
+        imgCar.src = img;
 
-switcheClass.addEventListener('click', switche);
+        console.log(imgCar);
+    }
+});
+
