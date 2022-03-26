@@ -449,6 +449,12 @@ a {
 
 }
 
+@media (max-width: 300px) {
+    .left-img-why-us img {
+        max-width: 280px;
+    }
+}
+
 
 /* welcome screen */
 
