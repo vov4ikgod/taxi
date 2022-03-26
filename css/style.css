@@ -167,7 +167,11 @@ a {
     display: none;
 }
 
+/* ---------------------------- */
+
 @media (max-width: 768px) {
+
+    /* Header, burger, popup */
 
     .navbar {
         height: 84px;
@@ -197,6 +201,14 @@ a {
         justify-content: center;
     }
 
+    .burger.active-burger .burger-span {
+        background-color: #fff;
+    }
+
+    .logo-header.active-title .simferopol-logo-header {
+        color: var(--main-color);
+    }
+
     .burger-span:after, .burger-span:before {
         content: "";
         background-color: inherit;
@@ -214,10 +226,6 @@ a {
         bottom: 8px;
     }
 
-    .burger.active-burger {
-        background-color: #fff;
-    }
-
     .popup {
         position: fixed;
         top: 84px;
@@ -232,14 +240,6 @@ a {
     .popup.open {
         top: 84px;
         left: 0;
-    }
-
-    .popup.open .burger-span {
-        background-color: #fff;
-    }
-
-    .popup.open ~ .simferopol-logo-header {
-        color: var(--main-color);
     }
 
     .popup.open ~ .navbar {
@@ -266,11 +266,188 @@ a {
         color: var(--main-color);
     }
 
+    .popup .tel-header {
+        display: block;
+        margin-top: 25px;
+    }
+
+    .logo-header.active-title .simferopol-logo-header, .tel-link-header {
+        color: var(--main-color);
+    }
+
+    .popup .tel-header {
+        display: block;
+        margin-top: 25px;
+        display: flex;
+        text-align: center;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .tel-link-header {
+        margin-top: 0;
+    }
+
+    /* ------------------------- */
+
+
+    /* welcome-screen */
+
+    .welcome-screen .wrapper-welcome-screen {
+        width: 100%;
+        padding: 0 30px 0 30px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .welcome-screen-wrapper {
+        padding: 40px 0 40px 0;
+    }
+
+    .welcome-screen .title-welcome-screen {
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .text-welcome-screen {
+        font-size: 16px;
+    }
+
+    /* ------------- */
+
+
+
+    /* why-us */
+
+    .why-us {
+        margin-top: 50px;
+    }
+
+    .why-us .why-us-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 30px 0 30px;
+    }
+
+    .why-us .left-content-why-us {
+        gap: 15px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .right-content-why-us {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        width: 700px;
+        gap: 44px;
+    }
+
+    .left-content-why-us .left-title-why-us {
+        font-size: 40px;
+    }
+
+    .left-img-why-us img {
+        width: 400px;
+    }
+
+    .left-img-why-us {
+        margin-top: 15px;
+    }
+
+    /* ------------ */
+
 }
 
-/* ---------------------------- */
+@media (max-width: 360px) {
+
+    /* header */
+
+    .transfer-logo-header {
+        font-size: 12px;
+    }
+
+    .simferopol-logo-header {
+        font-size: 16px;
+    }
+
+    .popup .p-link-menu-header {
+        font-size: 14px;
+    }
+    
+    .popup .text-tel-header {
+        font-size: 12px;
+    }
+
+    .popup .tel-link-header {
+        font-size: 20px;
+    }
+
+    /* -------------------- */
 
 
+    /* welcome-screen */
+
+    .welcome-screen .title-welcome-screen {
+        font-size: 30px;
+    }
+
+    .text-welcome-screen {
+        font-size: 12px;
+    }
+
+    /* ------------- */
+
+
+    /* why-us */
+
+    .why-us {
+        margin-top: 50px;
+    }
+
+    .why-us .why-us-wrapper {
+        padding: 0 30px 0 30px;
+    }
+
+    .why-us .left-content-why-us {
+        gap: 15px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .right-content-why-us {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        width: 700px;
+        gap: 44px;
+    }
+
+    .left-content-why-us .left-title-why-us {
+        font-size: 30px;
+    }
+
+    .left-img-why-us img {
+        max-width: 300px;
+    }
+
+    .left-img-why-us {
+        margin-top: 15px;
+    }
+
+    /* ------------ */
+
+}
 
 
 /* welcome screen */
@@ -335,7 +512,7 @@ a {
     justify-content: center;
 }
 
-.wrapper-why-us {
+.why-us-wrapper {
     display: flex;
     gap: 100px;
 }
@@ -377,6 +554,8 @@ a {
 
 .title-whe-us {
     font-size: 18px;
+    border-bottom: 2px solid var(--main-color);
+    padding: 0 0 15px 0;
 }
 
 .text-block-whe-us {
