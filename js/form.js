@@ -5,6 +5,8 @@ const next = document.querySelector('.next');
 const form = document.querySelector('form');
 const textButtonsForm = document.querySelector('.text-right-buttons-form');
 const titleButtonsForm = document.querySelector('.title-right-buttons-form');
+const modalWrapper = document.querySelector('.modal-wrapper');
+const buttonModal = document.querySelector('.button-modal');
 
 let stepForm = () => {
 
@@ -15,13 +17,17 @@ let stepForm = () => {
         formStep--;
         stepNumber[formStep + 1].classList.remove('active-step-number');
         updateFormSteps();
-    })
+    });
 
     next.addEventListener('click', (e) => {
         e.preventDefault();
         formStep++;
         updateFormSteps();
-    })
+    });
+
+    buttonModal.addEventListener('click', () => {
+        modalWrapper.classList.remove('active-modal'); 
+    });
 
     let updateFormSteps = () => {
         steps.forEach((step) => {
@@ -40,7 +46,7 @@ let stepForm = () => {
             titleButtonsForm.style.display = 'none';
         } else {
             prev.style.display = 'block';
-            next.innerText = 'Далее';
+            next.innerText = 'Заказать такси';
             textButtonsForm.style.display = 'block';
             titleButtonsForm.style.display = 'block';
         }
@@ -59,6 +65,11 @@ let stepForm = () => {
             textButtonsForm.innerText = 'Все данные заполнены!';
             titleButtonsForm.innerText = `Стоимость Вашей поездки 
                                         составляет: 1580₽`;
+            next.classList.add('active-next');
+        }
+
+        if (formStep === 2) {
+            modalWrapper.classList.add('active-modal');
         }
     }
 
