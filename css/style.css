@@ -1689,6 +1689,11 @@ a {
         bottom: -55px;
     }
 
+    .slick-dots li button:before {
+        line-height: 8px;
+        content: '';
+    }
+
     /* ---------- */
 
 
