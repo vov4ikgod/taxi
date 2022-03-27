@@ -169,291 +169,7 @@ a {
 
 /* ---------------------------- */
 
-@media (max-width: 768px) {
 
-    /* Header, burger, popup */
-
-    .navbar {
-        height: 84px;
-        transition: all .5s ease;
-    }
-
-    .wrapper-navbar .ul-menu-header, .tel-header {
-        display: none;
-    }
-
-    .wrapper-navbar {
-        padding: 20px 30px 20px 30px;
-    }
-
-    .burger {
-        display: block;
-        width: 30px;
-        display: flex;
-    }
-
-    .burger-span {
-        height: 2px;
-        width: 15px;
-        background-color: #000;
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-
-    .burger.active-burger .burger-span {
-        background-color: #fff;
-    }
-
-    .logo-header.active-title .simferopol-logo-header {
-        color: var(--main-color);
-    }
-
-    .burger-span:after, .burger-span:before {
-        content: "";
-        background-color: inherit;
-        position: absolute;
-        width: 30px;
-        height: 2px;
-        transition: all .2s ease;
-    }
-
-    .burger-span:after {
-        top: 8px;
-    }
-
-    .burger-span:before {
-        bottom: 8px;
-    }
-
-    .popup {
-        position: fixed;
-        top: 84px;
-        left: 100%;
-        background-color: #151515;
-        width: 100%;
-        height: 100%;
-        transition: all .5s ease;
-        padding: 0 30px 0 30px;
-    }
-
-    .popup.open {
-        top: 84px;
-        left: 0;
-    }
-
-    .popup.open ~ .navbar {
-        background-color: #151515;
-    }
-
-    .popup .ul-menu-header {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
-        gap: 0;
-        border-bottom: 1px solid #fff;
-    }
-
-    .popup .p-link-menu-header {
-        color: #fff;
-        padding: 20px 0 20px 0;
-        margin: 0;
-        border-top: 1px solid #fff;
-    }
-
-    .popup .p-link-menu-header:hover {
-        color: var(--main-color);
-    }
-
-    .popup .tel-header {
-        display: block;
-        margin-top: 25px;
-    }
-
-    .logo-header.active-title .simferopol-logo-header, .tel-link-header {
-        color: var(--main-color);
-    }
-
-    .popup .tel-header {
-        display: block;
-        margin-top: 25px;
-        display: flex;
-        text-align: center;
-        width: 100%;
-        gap: 5px;
-    }
-
-    .tel-link-header {
-        margin-top: 0;
-    }
-
-    /* ------------------------- */
-
-
-    /* welcome-screen */
-
-    .welcome-screen .wrapper-welcome-screen {
-        width: 100%;
-        padding: 0 30px 0 30px;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .welcome-screen-wrapper {
-        padding: 40px 0 40px 0;
-    }
-
-    .welcome-screen .title-welcome-screen {
-        font-size: 50px;
-        padding: 0;
-    }
-
-    .text-welcome-screen {
-        font-size: 16px;
-    }
-
-    /* ------------- */
-
-
-
-    /* why-us */
-
-    .why-us {
-        margin-top: 50px;
-    }
-
-    .why-us .why-us-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-        padding: 0 30px 0 30px;
-    }
-
-    .why-us .left-content-why-us {
-        gap: 15px;
-        display: flex;
-        align-items: center;
-    }
-    
-    .right-content-why-us {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: center;
-        width: 700px;
-        gap: 44px;
-    }
-
-    .left-content-why-us .left-title-why-us {
-        font-size: 40px;
-    }
-
-    .left-img-why-us img {
-        width: 400px;
-    }
-
-    .left-img-why-us {
-        margin-top: 15px;
-    }
-
-    /* ------------ */
-
-}
-
-@media (max-width: 360px) {
-
-    /* header */
-
-    .transfer-logo-header {
-        font-size: 12px;
-    }
-
-    .simferopol-logo-header {
-        font-size: 16px;
-    }
-
-    .popup .p-link-menu-header {
-        font-size: 14px;
-    }
-    
-    .popup .text-tel-header {
-        font-size: 12px;
-    }
-
-    .popup .tel-link-header {
-        font-size: 20px;
-    }
-
-    /* -------------------- */
-
-
-    /* welcome-screen */
-
-    .welcome-screen .title-welcome-screen {
-        font-size: 30px;
-    }
-
-    .text-welcome-screen {
-        font-size: 12px;
-    }
-
-    /* ------------- */
-
-
-    /* why-us */
-
-    .why-us {
-        margin-top: 50px;
-    }
-
-    .why-us .why-us-wrapper {
-        padding: 0 30px 0 30px;
-    }
-
-    .why-us .left-content-why-us {
-        gap: 15px;
-        display: flex;
-        align-items: center;
-    }
-    
-    .right-content-why-us {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: center;
-        width: 700px;
-        gap: 44px;
-    }
-
-    .left-content-why-us .left-title-why-us {
-        font-size: 30px;
-    }
-
-    .left-img-why-us img {
-        max-width: 300px;
-    }
-
-    .left-img-why-us {
-        margin-top: 15px;
-    }
-
-    /* ------------ */
-
-}
-
-@media (max-width: 300px) {
-    .left-img-why-us img {
-        max-width: 280px;
-    }
-}
 
 
 /* welcome screen */
@@ -461,7 +177,7 @@ a {
 .welcome-screen {
     width: 100%;
     height: auto;
-    background-image: url('./img/bgc-welcome-screen.png');
+    background-image: url('/img/bgc-welcome-screen.png');
     background-repeat: no-repeat;
 }
 
@@ -742,7 +458,7 @@ a {
 
 /* taxi-number */
 
-.wrapper-taxi-number {
+.text-taxi-number {
     padding: 90px 275px;
 }
 
@@ -768,7 +484,7 @@ a {
 }
 
 .item-taxi-number {
-    width: 320px;
+    width: 270px;
     height: 235px;
     border: 1px solid #D2D2D2;
     border-radius: 5px;
@@ -777,6 +493,7 @@ a {
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    padding: 0 35px 0 35px;
 }
 
 .item-title-taxi-number {
@@ -785,12 +502,17 @@ a {
     color: #151515;
     border-bottom: 2px solid var(--main-color);
     padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    line-height: 85px;
+    width: 221px;
 }
 
 .item-text-taxi-number {
     font-weight: 500;
     font-size: 14px;
     color: #151515;
+    text-align: center;
 }
 
 /* ----------- */
@@ -807,6 +529,10 @@ a {
 
 .class-taxi {
     margin-top: 90px;
+}
+
+.class-taxi-mobile {
+    display: none;
 }
 
 .wrapper-class-taxi {
@@ -1021,13 +747,13 @@ a {
 }
 
 .prev-responses {
-    bottom: 40px;
+    bottom: 20px;
     left: 0;
 }
 
 .next-responses {
     left: 55px;
-    bottom: 40px;
+    bottom: 20px;
 }
 
 .next-responses:hover,
@@ -1368,3 +1094,698 @@ a {
 }
 
 /* -------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* modal */
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(21, 21, 21, 0.8);
+    justify-content: center;
+    align-items: center;
+    display: none;
+} 
+
+.modal-wrapper.active-modal {
+    display: flex;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 20px 32px;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #151515;
+    text-align: center;
+}
+
+.modal-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #151515;
+    margin-top: 10px;
+}
+
+.modal-description p {
+    padding: 0 7px;
+    margin: 3px 0;
+}
+
+.img-modal {
+    width: 260px;
+    height: 120px;
+}
+
+.img-block-modal {
+    margin-top: 15px;
+}
+
+.button-modal {
+    width: 100%;
+    margin-top: 15px;
+    padding: 16px 69px;
+    border: none;
+    background-color: var(--main-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #151515;
+    transition: all .2s ease;
+}
+
+.button-modal:hover {
+    background-color: #151515;
+    color: #fff;
+}
+
+/* ------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    /* Header, burger, popup */
+
+    .navbar {
+        height: 84px;
+        transition: all .5s ease;
+    }
+
+    .wrapper-navbar .ul-menu-header, .tel-header {
+        display: none;
+    }
+
+    .wrapper-navbar {
+        padding: 20px 30px 20px 30px;
+    }
+
+    .burger {
+        display: block;
+        width: 30px;
+        display: flex;
+    }
+
+    .burger-span {
+        height: 2px;
+        width: 15px;
+        background-color: #000;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .burger.active-burger .burger-span {
+        background-color: #fff;
+    }
+
+    .logo-header.active-title .simferopol-logo-header {
+        color: var(--main-color);
+    }
+
+    .burger-span:after, .burger-span:before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        transition: all .2s ease;
+    }
+
+    .burger-span:after {
+        top: 8px;
+    }
+
+    .burger-span:before {
+        bottom: 8px;
+    }
+
+    .popup {
+        position: fixed;
+        top: 84px;
+        left: 100%;
+        background-color: #151515;
+        width: 100%;
+        height: 100%;
+        transition: all .5s ease;
+        padding: 0 30px 0 30px;
+    }
+
+    .popup.open {
+        top: 84px;
+        left: 0;
+    }
+
+    .popup.open ~ .navbar {
+        background-color: #151515;
+    }
+
+    .popup .ul-menu-header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        gap: 0;
+        border-bottom: 1px solid #fff;
+    }
+
+    .popup .p-link-menu-header {
+        color: #fff;
+        padding: 20px 0 20px 0;
+        margin: 0;
+        border-top: 1px solid #fff;
+    }
+
+    .popup .p-link-menu-header:hover {
+        color: var(--main-color);
+    }
+
+    .popup .tel-header {
+        display: block;
+        margin-top: 25px;
+    }
+
+    .logo-header.active-title .simferopol-logo-header, .tel-link-header {
+        color: var(--main-color);
+    }
+
+    .popup .tel-header {
+        display: block;
+        margin-top: 25px;
+        display: flex;
+        text-align: center;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .tel-link-header {
+        margin-top: 0;
+    }
+
+    /* ------------------------- */
+
+
+    /* welcome-screen */
+
+    .welcome-screen .wrapper-welcome-screen {
+        width: 100%;
+        padding: 0 30px 0 30px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .welcome-screen-wrapper {
+        padding: 40px 0 40px 0;
+    }
+
+    .welcome-screen .title-welcome-screen {
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .text-welcome-screen {
+        font-size: 16px;
+    }
+
+    /* ------------- */
+
+
+
+    /* why-us */
+
+    .why-us {
+        margin-top: 50px;
+    }
+
+    .why-us .why-us-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 30px 0 30px;
+    }
+
+    .why-us .left-content-why-us {
+        gap: 15px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .right-content-why-us {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        width: 700px;
+        gap: 44px;
+    }
+
+    .left-content-why-us .left-title-why-us {
+        font-size: 40px;
+    }
+
+    .left-img-why-us img {
+        width: 400px;
+    }
+
+    .left-img-why-us {
+        margin-top: 15px;
+    }
+
+    /* ------------ */
+
+
+    /* rates */
+
+    .wrappper-rates {
+        padding: 0;
+    }
+
+    .rates .rates-title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .rates .rates-description {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .name-table,
+    .item-table-header,
+    .rub-table {
+        font-size: 10px;
+    }
+
+    .name-table {
+        padding: 10px;
+    }
+
+    .item-table-header {
+        font-weight: 700;
+        font-size: 10px;
+        color: #FFFFFF;
+        padding: 32px 20px 32px 20px;  
+    }
+
+    /* -------- */
+
+
+
+    /* offical-taxi */
+
+    .offical-taxi {
+        margin-top: 50px;
+    }
+    
+    .wrapper-offical-taxi {
+        background-color: #F6F6F6;
+        padding: 30px 30px;
+    }
+
+    .title-offical-taxi {
+        font-size: 25px;
+    }
+
+    .text-block-offical-texi {
+        margin-top: 27px;
+    }
+
+    /* ------------ */
+
+
+    /* taxi-number */
+
+    .text-taxi-number {
+        padding: 0;
+        gap: 5px;
+    }    
+
+    .taxi-number-wrapper {
+        padding: 50px 30px 0 30px;
+    }
+
+    .title-taxi-number {
+        font-size: 25px;
+    }
+
+    .description-taxi-number {
+        font-size: 14px;
+    }
+
+    .items-taxi-number {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .item-taxi-number {
+        max-width: 300px;
+        width: 100%;
+        height: 235px;
+        border: 1px solid #D2D2D2;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 50px 0 50px;
+    }
+    
+    /* ---------- */
+
+
+
+    /* class-taxi-mobile */
+
+    .class-taxi {
+        display: none;
+    }
+
+    .class-taxi-mobile {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .wrapper-class-taxi-mobile {
+        padding: 0 30px 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .block-text-class-taxi-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .title-class-taxi-mobile {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #151515;
+    }
+
+    .description-class-taxi-mobile {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #151515;
+        text-align: center;
+    }
+
+    .slides-class-taxi-mobile {
+        display: flex;
+        justify-content: center;
+        max-width: 300px;
+        position: relative;
+    }
+
+    .slide-class-taxi-mobile {
+        border: 2px solid #D2D2D2;
+        border-radius: 5px;
+        height: 416px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        max-width: 300px;
+    }
+
+    .slick-initialized .slick-slide {
+        display: flex;
+    }
+
+    .text-block-slide-class-taxi-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title-slide-class-taxi-mobile {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #151515;
+        text-align: center;
+    }
+
+    .discription-slide-class-taxi-mobile {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 115.2%;
+        color: #151515;
+        text-align: center;
+    }
+
+    .text-slide-class-taxi-mobile {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 115.2%;
+        text-align: center;
+        color: #828282;
+    }
+
+    .block-img-slide-class-taxi-mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-slide-class-taxi-mobile {
+        width: 273px;
+        height: 171px;
+    }
+
+    .btn-slide-class-taxi-mobile {
+        width: 240px;
+        height: 50px;
+        background-color: var(--main-color);
+        border: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #151515;
+        transition: all .2s ease;
+    }
+
+    .btn-slide-class-taxi-mobile:hover {
+        background-color: #151515;
+        color: #fff;
+    }
+
+    .class-taxi-next,
+    .class-taxi-prev {
+        width: 40px;
+        height: 40px;
+        background-color: var(--main-color);
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .2s ease;
+        z-index: 5;
+        position: absolute;
+        bottom: -65px;
+    }
+
+    .class-taxi-next {
+        right: 60px;
+    }
+
+    .class-taxi-prev {
+        left: 60px;
+    }
+
+    .slick-dots li {
+        position: relative;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: var(--grey);
+    }
+
+    .slick-dots li button:before {
+        opacity: 0;
+    }
+
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: var(--main-color);
+        color: var(--main-color);
+    }
+
+    .slick-dots li:hover button:before {
+        opacity: 1;
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+        border-radius: 50%;
+        color: transparent;
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        bottom: -55px;
+    }
+
+    /* ---------- */
+
+
+
+}
+
+@media (max-width: 360px) {
+
+    /* header */
+
+    .transfer-logo-header {
+        font-size: 12px;
+    }
+
+    .simferopol-logo-header {
+        font-size: 16px;
+    }
+
+    .popup .p-link-menu-header {
+        font-size: 14px;
+    }
+    
+    .popup .text-tel-header {
+        font-size: 12px;
+    }
+
+    .popup .tel-link-header {
+        font-size: 20px;
+    }
+
+    /* -------------------- */
+
+
+    /* welcome-screen */
+
+    .welcome-screen .title-welcome-screen {
+        font-size: 30px;
+    }
+
+    .text-welcome-screen {
+        font-size: 12px;
+    }
+
+    /* ------------- */
+
+
+    /* why-us */
+
+    .why-us {
+        margin-top: 50px;
+    }
+
+    .why-us-wrapper {
+        padding: 0 30px 0 30px;
+    }
+
+    .why-us .left-content-why-us {
+        gap: 15px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .right-content-why-us {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        width: 700px;
+        gap: 44px;
+    }
+
+    .left-content-why-us .left-title-why-us {
+        font-size: 30px;
+    }
+
+    .left-img-why-us img {
+        max-width: 300px;
+        margin-top: 15px;
+    }
+    /* ------------ */
+
+
+    /* rates */
+
+    .item-table-header {
+        padding: 0 2px 0 2px;  
+        font-size: 10px;
+    }
+
+    /* --------- */
+
+}
+
+@media (max-width: 300px) {
+
+    .left-img-why-us img {
+        max-width: 280px;
+    }
+
+}
