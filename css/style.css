@@ -1563,20 +1563,31 @@ a {
         justify-content: center;
         max-width: 300px;
         max-height: 416px;
-        height: 100%;
+        height: 416px;
         position: relative;
     }
 
     .slide-class-taxi-mobile {
         border: 2px solid #D2D2D2;
         border-radius: 5px;
-        height: 416px;
-        width: 300px;
+        height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 30px;
         max-width: 300px;
+    }
+
+    .slick-track {
+        width: 300px;
+        display: flex;
+    }
+
+    .slick-list {
+        display: flex;
+        justify-content: center;
+
     }
 
     .class-taxi-mobile  .slick-initialized .slick-slide {
