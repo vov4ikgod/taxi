@@ -177,7 +177,7 @@ a {
 .welcome-screen {
     width: 100%;
     height: auto;
-    background-image: url('/img/bgc-welcome-screen.png');
+    background-image: url('./img/bgc-welcome-screen.png');
     background-repeat: no-repeat;
 }
 
