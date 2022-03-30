@@ -1579,15 +1579,14 @@ a {
         max-width: 300px;
     }
 
-    .slick-track {
+    .slides-class-taxi-mobile .slick-track {
         width: 300px;
         display: flex;
     }
 
-    .slick-list {
+    .slides-class-taxi-mobile .slick-list {
         display: flex;
         justify-content: center;
-
     }
 
     .class-taxi-mobile  .slick-initialized .slick-slide {
@@ -1737,7 +1736,7 @@ a {
         background-repeat: no-repeat;
         display: flex;
         align-items: center;
-        height: 100%;
+        height: 840px;
     }
 
     .wrapper-responses {
@@ -1796,13 +1795,13 @@ a {
     }
 
     .prev-responses {
-        bottom: 73%;
+        bottom: 76%;
         left: 30px;
     }
 
     .next-responses {
         left: 90px;
-        bottom: 73%;
+        bottom: 76%;
     }
 
     /* ----------- */
@@ -2039,18 +2038,7 @@ a {
 
 
 
-    /* responses */
 
-    .responses-mobil {
-        margin-top: 90px;
-        background-image: url('/img/bgc-responces-mobile.png');
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
-
-    /* --------- */
 }
 
 @media (max-width: 330px) {
