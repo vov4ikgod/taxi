@@ -179,6 +179,7 @@ a {
     height: auto;
     background-image: url('./../img/bgc-welcome-screen.png');
     background-repeat: no-repeat;
+    background-position: center top;
 }
 
 .wrapper-welcome-screen {
@@ -686,6 +687,7 @@ a {
     margin-top: 90px;
     background-image: url('./..//img/bgc-responces.png');
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
 }
