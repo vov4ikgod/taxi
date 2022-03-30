@@ -177,7 +177,7 @@ a {
 .welcome-screen {
     width: 100%;
     height: auto;
-    background-image: url('./img/bgc-welcome-screen.png');
+    background-image: url('./../img/bgc-welcome-screen.png');
     background-repeat: no-repeat;
 }
 
@@ -684,7 +684,7 @@ a {
 
 .responses {
     margin-top: 90px;
-    background-image: url('/img/Минивэн-big.png');
+    background-image: url('./..//img/bgc-responces.png');
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
